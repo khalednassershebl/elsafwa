@@ -1,0 +1,36 @@
+.team-page {
+    padding: 75px 0;
+}
+.team-cards {
+    .team-card {
+        background: {
+            size: cover;
+            position: center center;
+            repeat: no-repeat;
+        }
+        margin-bottom: 12px;
+        height: 350px;
+        width: 100%;
+        position: relative;
+        border-radius: 12px;
+        .team-card-info {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            border-radius: 12px;
+            background: #FFF;
+            width: 90%;
+            padding: 15px;
+            h3 {
+                margin: 0;
+                font-size: 1.2rem;
+            }
+            span {
+                margin: 0;
+                font-size: 0.9rem;
+                color: #7e868e;
+            }
+        }
+    }
+}

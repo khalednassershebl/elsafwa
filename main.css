@@ -1846,6 +1846,152 @@ p.text a {
   margin-bottom: 75px;
 }
 
+.contact-page {
+  padding: 75px 0;
+}
+.contact-page .contact-cards {
+  margin-top: -150px;
+  position: relative;
+  z-index: 5;
+}
+.contact-page .contact-cards .contact-card {
+  background: #FFF;
+  border-radius: 12px;
+  padding: 45px 50px;
+  border: 1px solid #f5f8fa;
+}
+.contact-page .contact-cards .contact-card .contact-card-icon {
+  border: 1px solid #f5f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: #f5f8fa;
+}
+.contact-page .contact-cards .contact-card .contact-card-icon svg {
+  height: 32px;
+  width: 32px;
+  fill: #000;
+}
+.contact-page .contact-cards .contact-card .contact-card-info h3 {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+}
+.contact-page .contact-cards .contact-card .contact-card-info span {
+  color: #7e868e;
+  font-size: 0.9rem;
+  display: block;
+}
+.contact-page .contact-cards .contact-card .contact-card-info a {
+  text-decoration: none;
+  color: #005aff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 25px;
+  display: block;
+}
+.contact-page .contact-map .map iframe {
+  height: 550px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 75px;
+}
+
+.activities-page {
+  padding: 75px 0;
+}
+
+.activity-card {
+  padding: 15px 15px;
+  background: #FFF;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #f5f8fa;
+}
+.activity-card figure {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 175px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+.activity-card .activity-info {
+  padding: 5px 10px;
+}
+.activity-card .activity-info span {
+  color: #7e868e;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.activity-card .activity-info h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+.activity-card .activity-info p {
+  color: #7e868e;
+  font-size: 0.8rem;
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.activity-card .activity-info a {
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 12px;
+  background: #005aff;
+  color: #FFF;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.team-page {
+  padding: 75px 0;
+}
+
+.team-cards .team-card {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 12px;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  border-radius: 12px;
+}
+.team-cards .team-card .team-card-info {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 12px;
+  background: #FFF;
+  width: 90%;
+  padding: 15px;
+}
+.team-cards .team-card .team-card-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.team-cards .team-card .team-card-info span {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #7e868e;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -1,0 +1,57 @@
+.activities-page {
+    padding: 75px 0;
+
+}
+.activity-card {
+    padding: 15px 15px;
+    background: #FFF;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #f5f8fa;
+    figure {
+        background: {
+            size: cover;
+            position: center center;
+            repeat: no-repeat;
+        }
+        height: 175px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 12px;
+    }
+    .activity-info {
+        padding: 5px 10px;
+        span {
+            color: #7e868e;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000;
+        }
+        p {
+            color: #7e868e;
+            font-size: 0.8rem;
+            font-weight: 400;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 12px;
+            background: #005aff;
+            color: #FFF;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
