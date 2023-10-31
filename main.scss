@@ -44,6 +44,7 @@
 @import "contact/contact";
 @import "activities/activities";
 @import "team/team";
+@import "apply-form/apply-form";
 
 //-------- [ End Pages ] --------
 
@@ -457,33 +458,38 @@ footer {
             padding-left: 50px;
         }
         .Footer-head {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 1.3rem;
+            display: block;
             a {
                 text-decoration: none;
                 color: #FFF;
-                font-size: 1.3rem;
+                font-size: 1rem;
                 display: block;
             }
             a.footer-logo {
                 font-family: "en-bold";
                 font-size: 1.4rem;
                 img {
-                    height: 50px;
-                    width: 50px;
+                    height: 75px;
+                    width: 75px;
                 }
             }
         }
         p.footer-address {
             color: #FFF;
             font-size: 13px;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
+            
         }
         ul {
             margin: 0;
             padding: 0;
             li {
                 color: #FFF;
-                font-size: 13px;
+                font-size: 14px;
                 margin: 0 0 15px;
                 transition: all 0.3s ease-in-out;
                 &:hover {
@@ -493,8 +499,24 @@ footer {
                     color: #FFF;
                 }
                 a {
-                    color: #FFF;
+                    color: #d5d5d5;
                     text-decoration: none;
+                }
+            }
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-right: -15px;
+            li {
+                margin: 0 10px;
+                a {
+                    svg {
+                        fill: #FFF;
+                        height: 22px;
+                        width: 22px;
+                    }
                 }
             }
         }

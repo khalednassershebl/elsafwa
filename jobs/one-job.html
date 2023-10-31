@@ -528,6 +528,70 @@
 
                     </div>
 
+
+                    <div class="job-popup apply-popup" id="apply-form">
+                        <div class="job-popup-content">
+
+                            <div class="job-popup-header">
+                                <h6>قدم على الوظيفة</h6>
+                            </div>
+
+                            <div class="job-popup-form">
+                                <form action="">
+                                    <div class="row">
+
+                                        <div class="col-lg-6">
+                                            <label for="">الأسم بالكامل</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="الأسم بالكامل">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label for="">رقم الموبايل</label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="رقم التليفون">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <label for="">البريد الإلكترونى</label>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control"
+                                                    placeholder="البريد الإلكترونى">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <label for="">ارفق السيرة الذاتية</label>
+                                            <div class="file">
+                                                <div class="file__input" id="file__input">
+                                                    <input class="file__input--file" id="customFile" type="file"
+                                                        multiple="multiple" name="files[]" />
+                                                    <label class="file__input--label" for="customFile"
+                                                        data-text-btn="رفع">إضافة ملف:</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12">
+                                            <label for="">لماذا علينا اختيارك لهذة الوظيفة</label>
+                                            <div class="form-group">
+                                                <textarea name="" id="" class="form-control"
+                                                    placeholder="اكتب باختصار"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <button typy="submit">قدم على الوظيفة</button>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -614,6 +678,29 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // ------------  File upload BEGIN ------------
+            $('.file__input--file').on('change', function (event) {
+                var files = event.target.files;
+                for (var i = 0; i < files.length; i++) {
+                    var file = files[i];
+                    $("<div class='file__value'><div class='file__value--text'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input');
+                }
+            });
+
+            //Click to remove item
+            $('body').on('click', '.file__value', function () {
+                $(this).remove();
+            });
+            // ------------ File upload END ------------ 
+
+
+
+        });	
+    </script>
 
 </body>
 
